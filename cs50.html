@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CS50 Learning Journey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+            color: #333;
+        }
+        header {
+            background-color: #0a0a23;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #1c1c3c;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #0a0a23;
+            border-bottom: 2px solid #0a0a23;
+            padding-bottom: 5px;
+        }
+        .project-list, .resources-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .project-list li, .resources-list li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .project-list a, .resources-list a {
+            color: #0a0a23;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project-list a:hover, .resources-list a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #0a0a23;
+            color: #fff;
+            text-align: center;
+            padding: 15px 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My CS50 Learning Journey</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#progress">Progress</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About My CS50 Journey</h2>
+            <p>
+                Welcome to my CS50 Learning Journey website! CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, has been an enriching experience. This site documents my progress, projects, and the resources that have helped me along the way.
+            </p>
+        </section>
+
+        <!-- Progress Section -->
+        <section id="progress">
+            <h2>Progress</h2>
+            <p>
+                I embarked on the CS50 course to deepen my understanding of computer science fundamentals. Here's a snapshot of my progress:
+            </p>
+            <ul>
+                <li>Completed Weeks 1 to 10</li>
+                <li>Mastered C, Python, and JavaScript</li>
+                <li>Developed several projects and problem sets</li>
+                <li>Engaged with the CS50 community through forums and study groups</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects & Assignments</h2>
+            <ul class="project-list">
+                <li>
+                    <a href="https://github.com/yourusername/cs50-project1" target="_blank">Project 1: Hello</a>
+                    <p>A simple program that prints "Hello, World!" in multiple languages.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/yourusername/cs50-project2" target="_blank">Project 2: Mario</a>
+                    <p>Recreating the classic Mario pyramid using loops and conditional statements.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/yourusername/cs50-project3" target="_blank">Project 3: Caesar Cipher</a>
+                    <p>Implementing a Caesar cipher for basic encryption and decryption.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/yourusername/cs50-project4" target="_blank">Project 4: Web Programming</a>
+                    <p>Developed a dynamic website using HTML, CSS, and JavaScript.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources">
+            <h2>Helpful Resources</h2>
+            <ul class="resources-list">
+                <li><a href="https://cs50.harvard.edu/" target="_blank">Official CS50 Website</a></li>
+                <li><a href="https://github.com/cs50" target="_blank">CS50 GitHub Repository</a></li>
+                <li><a href="https://www.youtube.com/c/cs50tv" target="_blank">CS50 YouTube Channel</a></li>
+                <li><a href="https://cs50.stackexchange.com/" target="_blank">CS50 Stack Exchange</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Doruk Güçlü. All rights reserved.</p>
+        <p>Follow me on <a href="https://github.com/yourusername" target="_blank" style="color: #fff; text-decoration: underline;">GitHub</a></p>
+    </footer>
+
+</body>
+</html>
