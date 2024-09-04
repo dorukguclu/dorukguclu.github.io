@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Professional GitHub Portfolio</title>
+    <title>My Portfolio</title>
     <style>
         /* General Reset */
         * {
@@ -15,114 +15,114 @@
 
         /* Global Styles */
         body {
-            font-family: 'Open Sans', sans-serif;
-            color: #2c3e50;
-            background-color: #f3f4f6;
-            line-height: 1.7;
-            overflow-x: hidden;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            background-color: #f7f7f7;
+            line-height: 1.6;
         }
 
         /* Header Styling */
         header {
-            background-color: #222831;
-            color: white;
+            background-color: #1a1a1a;
             padding: 50px 0;
+            color: white;
             text-align: center;
         }
         header h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
+            font-size: 3rem;
+            font-weight: 800;
         }
         header p {
-            font-size: 1.1rem;
-            color: #dddddd;
+            font-size: 1.2rem;
             margin-top: 10px;
+            color: #cccccc;
         }
 
-        /* Hero Section */
-        .hero {
-            background-color: #393e46;
-            color: #eeeeee;
-            padding: 80px 20px;
+        /* Intro Section */
+        .intro {
+            padding: 50px 20px;
             text-align: center;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            margin: -40px auto 50px auto;
+            width: 80%;
+            border-radius: 12px;
         }
-        .hero h2 {
-            font-size: 2.2rem;
-            font-weight: 600;
-            margin-bottom: 15px;
+        .intro h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
         }
-        .hero p {
+        .intro p {
             font-size: 1.1rem;
-            max-width: 750px;
+            color: #555;
+            max-width: 800px;
             margin: 0 auto;
-            color: #dddddd;
         }
 
-        /* Navigation Bar */
+        /* Navigation Styling */
         nav {
-            background-color: #f3f4f6;
-            padding: 15px 0;
             text-align: center;
-            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+            margin-bottom: 30px;
         }
         nav a {
-            margin: 0 20px;
             font-size: 1.1rem;
-            font-weight: 500;
-            color: #2c3e50;
+            color: #555;
+            margin: 0 20px;
+            font-weight: 600;
             transition: color 0.3s ease;
         }
         nav a:hover {
-            color: #ff5722;
+            color: #3498db;
         }
 
-        /* Section Styling */
-        section {
-            max-width: 900px;
-            margin: 60px auto;
-            padding: 50px;
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        /* Project Section with Card Layout */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
         }
-        section h2 {
-            font-size: 2.2rem;
-            color: #2c3e50;
-            font-weight: 700;
-            margin-bottom: 25px;
-            border-bottom: 2px solid #ff5722;
-            padding-bottom: 10px;
+        .project-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
         }
-        section p {
-            font-size: 1.1rem;
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        .project-card h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .project-card p {
+            font-size: 1rem;
             color: #666;
             margin-bottom: 20px;
         }
-
-        /* Project List */
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 20px 0;
-            font-size: 1.2rem;
-        }
-        ul li a {
-            color: #ff5722;
+        .project-card a {
+            font-size: 1rem;
+            color: #3498db;
             font-weight: 600;
-            transition: color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
-        ul li a:hover {
-            color: #e64a19;
-            transform: translateX(5px);
+        .project-card a:hover {
+            color: #1f78b4;
         }
 
         /* Footer */
         footer {
-            background-color: #222831;
-            color: #bbbbbb;
+            background-color: #1a1a1a;
+            color: #cccccc;
             text-align: center;
             padding: 40px 0;
             margin-top: 50px;
@@ -136,28 +136,28 @@
             header h1 {
                 font-size: 2.4rem;
             }
-            .hero h2 {
+            .intro h2 {
                 font-size: 1.8rem;
             }
-            section h2 {
-                font-size: 1.8rem;
+            .project-card h3 {
+                font-size: 1.4rem;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>My Professional GitHub Portfolio</h1>
+        <h1>My Portfolio</h1>
         <p>Showcasing My Projects, Skills, and Achievements</p>
     </header>
 
-    <div class="hero">
-        <h2>Welcome to My Portfolio</h2>
+    <section class="intro">
+        <h2>About Me</h2>
         <p>
-            I’m a passionate software developer focused on building scalable and efficient applications. With expertise in 
-            web development, data science, and machine learning, I thrive on solving complex challenges using modern technologies.
+            Welcome to my portfolio! I am a software developer passionate about building dynamic, efficient, and scalable web applications.
+            With a background in full-stack development, I specialize in crafting solutions that are both innovative and impactful.
         </p>
-    </div>
+    </section>
 
     <nav>
         <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">GitHub</a>
@@ -166,18 +166,26 @@
         <a href="https://cs50.harvard.edu/x/" target="_blank">CS50 Course</a>
     </nav>
 
-    <section id="projects">
-        <h2>Featured Projects</h2>
-        <p>Here are some key projects that showcase my work in full-stack development, data analytics, and machine learning:</p>
-        <ul>
-            <li><a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_1" target="_blank">Project 1: Task Management Web Application</a></li>
-            <li><a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_2" target="_blank">Project 2: Data Visualization Dashboard</a></li>
-            <li><a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_3" target="_blank">Project 3: Predictive Machine Learning Model</a></li>
-        </ul>
+    <section class="projects" id="projects">
+        <div class="project-card">
+            <h3>Task Management Web Application</h3>
+            <p>A dynamic web app for managing tasks with features such as categorization, deadlines, and user management.</p>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_1" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Data Visualization Dashboard</h3>
+            <p>An interactive data visualization platform built to help users explore and analyze complex datasets.</p>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_2" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Predictive Machine Learning Model</h3>
+            <p>A predictive machine learning model designed to analyze trends and forecast outcomes in various industries.</p>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_3" target="_blank">View on GitHub</a>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name | Innovating One Project at a Time</p>
+        <p>&copy; 2024 Your Name | Building the Future, One Project at a Time</p>
     </footer>
 </body>
 </html>
