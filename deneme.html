@@ -4,123 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Professional GitHub Portfolio</title>
+    <title>My Professional GitHub Portfolio</title>
     <style>
-        /* General Reset and Box-Sizing */
+        /* General Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Global Body Styles */
+        /* Global Styles */
         body {
-            font-family: 'Poppins', sans-serif;
-            color: #333;
-            background-color: #f0f2f5;
-            line-height: 1.6;
+            font-family: 'Open Sans', sans-serif;
+            color: #2c3e50;
+            background-color: #f3f4f6;
+            line-height: 1.7;
             overflow-x: hidden;
-        }
-
-        /* Anchor Tag Styling */
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
-        a:hover {
-            color: #007bff;
-            transform: translateY(-2px);
         }
 
         /* Header Styling */
         header {
-            background-color: #212529;
-            padding: 40px 0;
-            text-align: center;
+            background-color: #222831;
             color: white;
+            padding: 50px 0;
+            text-align: center;
         }
         header h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 10px;
+            font-size: 2.8rem;
+            font-weight: 700;
         }
         header p {
-            font-size: 1.2rem;
-            color: #adb5bd;
+            font-size: 1.1rem;
+            color: #dddddd;
+            margin-top: 10px;
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #007bff, #6610f2);
-            padding: 100px 20px;
+            background-color: #393e46;
+            color: #eeeeee;
+            padding: 80px 20px;
             text-align: center;
-            color: white;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
         .hero h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
         }
         .hero p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 40px;
-            color: rgba(255, 255, 255, 0.8);
-        }
-        .hero .btn {
-            background-color: white;
-            color: #007bff;
-            padding: 15px 40px;
             font-size: 1.1rem;
-            font-weight: 600;
-            border-radius: 50px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        .hero .btn:hover {
-            background-color: #0056b3;
-            color: white;
+            max-width: 750px;
+            margin: 0 auto;
+            color: #dddddd;
         }
 
-        /* Navigation Styles */
+        /* Navigation Bar */
         nav {
-            background-color: #f0f2f5;
-            padding: 20px 0;
+            background-color: #f3f4f6;
+            padding: 15px 0;
             text-align: center;
             border-bottom: 1px solid #ddd;
         }
         nav a {
             margin: 0 20px;
             font-size: 1.1rem;
-            font-weight: 600;
-            color: #212529;
-            padding: 10px 20px;
+            font-weight: 500;
+            color: #2c3e50;
+            transition: color 0.3s ease;
         }
         nav a:hover {
-            color: #007bff;
+            color: #ff5722;
         }
 
-        /* Section Styles */
+        /* Section Styling */
         section {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 60px auto;
             padding: 50px;
-            background-color: white;
+            background-color: #ffffff;
             border-radius: 12px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
         }
         section h2 {
             font-size: 2.2rem;
+            color: #2c3e50;
             font-weight: 700;
-            color: #333;
             margin-bottom: 25px;
-            border-bottom: 3px solid #007bff;
+            border-bottom: 2px solid #ff5722;
             padding-bottom: 10px;
         }
         section p {
             font-size: 1.1rem;
-            color: #555;
+            color: #666;
             margin-bottom: 20px;
         }
 
@@ -134,35 +110,34 @@
             font-size: 1.2rem;
         }
         ul li a {
-            color: #007bff;
+            color: #ff5722;
             font-weight: 600;
             transition: color 0.3s ease, transform 0.3s ease;
         }
         ul li a:hover {
-            color: #0056b3;
+            color: #e64a19;
             transform: translateX(5px);
         }
 
-        /* Footer Styling */
+        /* Footer */
         footer {
-            background-color: #212529;
-            color: #adb5bd;
+            background-color: #222831;
+            color: #bbbbbb;
             text-align: center;
             padding: 40px 0;
-            margin-top: 60px;
+            margin-top: 50px;
         }
         footer p {
-            margin: 0;
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.2rem;
+                font-size: 2.4rem;
             }
             .hero h2 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             section h2 {
                 font-size: 1.8rem;
@@ -179,11 +154,9 @@
     <div class="hero">
         <h2>Welcome to My Portfolio</h2>
         <p>
-            I’m a passionate software developer specializing in creating efficient, scalable, and user-friendly applications. 
-            With experience in web development, data visualization, and machine learning, I strive to solve complex problems 
-            using modern technologies.
+            I’m a passionate software developer focused on building scalable and efficient applications. With expertise in 
+            web development, data science, and machine learning, I thrive on solving complex challenges using modern technologies.
         </p>
-        <a href="#projects" class="btn">Explore My Projects</a>
     </div>
 
     <nav>
@@ -192,19 +165,19 @@
         <a href="#projects">Projects</a>
         <a href="https://cs50.harvard.edu/x/" target="_blank">CS50 Course</a>
     </nav>
-    
+
     <section id="projects">
         <h2>Featured Projects</h2>
-        <p>Below are some key projects showcasing my skills in full-stack development, data analysis, and machine learning:</p>
+        <p>Here are some key projects that showcase my work in full-stack development, data analytics, and machine learning:</p>
         <ul>
-            <li><a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_1" target="_blank">Project 1: Dynamic Web App for Task Management</a></li>
+            <li><a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_1" target="_blank">Project 1: Task Management Web Application</a></li>
             <li><a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_2" target="_blank">Project 2: Data Visualization Dashboard</a></li>
             <li><a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_3" target="_blank">Project 3: Predictive Machine Learning Model</a></li>
         </ul>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name | Building the Future, One Project at a Time</p>
+        <p>&copy; 2024 Your Name | Innovating One Project at a Time</p>
     </footer>
 </body>
 </html>
