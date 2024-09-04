@@ -4,114 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Professional GitHub Portfolio</title>
+    <title>Professional GitHub Portfolio</title>
     <style>
-        /* General Styles */
+        /* General Reset and Box-Sizing */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
+        /* Global Body Styles */
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: #333;
-            background-color: #f4f7f6;
+            background-color: #f0f2f5;
             line-height: 1.6;
+            overflow-x: hidden;
         }
+
+        /* Anchor Tag Styling */
         a {
             text-decoration: none;
             color: inherit;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
         a:hover {
-            color: #1d72b8;
+            color: #007bff;
+            transform: translateY(-2px);
         }
-        
-        /* Header and Hero Section */
+
+        /* Header Styling */
         header {
-            background-color: #1a1a1a;
-            padding: 20px 0;
+            background-color: #212529;
+            padding: 40px 0;
             text-align: center;
             color: white;
         }
         header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 10px;
         }
         header p {
             font-size: 1.2rem;
-            color: #b5b5b5;
+            color: #adb5bd;
         }
 
         /* Hero Section */
         .hero {
-            background-color: #ffffff;
-            padding: 80px 20px;
+            background: linear-gradient(135deg, #007bff, #6610f2);
+            padding: 100px 20px;
             text-align: center;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            color: white;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
         }
         .hero h2 {
-            font-size: 2.2rem;
-            color: #333;
+            font-size: 2.5rem;
+            font-weight: 700;
             margin-bottom: 20px;
         }
         .hero p {
-            font-size: 1.1rem;
-            color: #777;
-            margin-bottom: 40px;
+            font-size: 1.2rem;
             max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto 40px;
+            color: rgba(255, 255, 255, 0.8);
         }
         .hero .btn {
-            background-color: #1d72b8;
-            color: white;
-            padding: 15px 30px;
-            font-size: 1rem;
+            background-color: white;
+            color: #007bff;
+            padding: 15px 40px;
+            font-size: 1.1rem;
             font-weight: 600;
-            border-radius: 30px;
-            transition: background-color 0.3s ease;
+            border-radius: 50px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
         .hero .btn:hover {
-            background-color: #155a8a;
+            background-color: #0056b3;
+            color: white;
         }
 
-        /* Navigation */
+        /* Navigation Styles */
         nav {
-            background-color: #f4f7f6;
-            padding: 15px 0;
+            background-color: #f0f2f5;
+            padding: 20px 0;
             text-align: center;
             border-bottom: 1px solid #ddd;
         }
         nav a {
-            margin: 0 15px;
+            margin: 0 20px;
             font-size: 1.1rem;
-            color: #444;
+            font-weight: 600;
+            color: #212529;
             padding: 10px 20px;
         }
         nav a:hover {
-            color: #1d72b8;
+            color: #007bff;
         }
 
         /* Section Styles */
         section {
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 40px;
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 50px;
             background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            font-size: 2rem;
+        section h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
             color: #333;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #f4f7f6;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #007bff;
             padding-bottom: 10px;
         }
-        p {
+        section p {
             font-size: 1.1rem;
-            color: #666;
+            color: #555;
             margin-bottom: 20px;
         }
 
@@ -122,36 +131,40 @@
         }
         ul li {
             margin: 20px 0;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
         ul li a {
-            color: #1d72b8;
+            color: #007bff;
             font-weight: 600;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
         ul li a:hover {
-            color: #0f4c81;
+            color: #0056b3;
+            transform: translateX(5px);
         }
 
-        /* Footer */
+        /* Footer Styling */
         footer {
-            background-color: #1a1a1a;
-            color: #b5b5b5;
+            background-color: #212529;
+            color: #adb5bd;
             text-align: center;
-            padding: 30px 0;
-            margin-top: 50px;
+            padding: 40px 0;
+            margin-top: 60px;
         }
         footer p {
             margin: 0;
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
             .hero h2 {
+                font-size: 2rem;
+            }
+            section h2 {
                 font-size: 1.8rem;
             }
         }
@@ -166,13 +179,13 @@
     <div class="hero">
         <h2>Welcome to My Portfolio</h2>
         <p>
-            Hi, I'm a passionate software developer specializing in creating efficient, scalable, and user-friendly applications. 
-            I've recently completed Harvard's CS50 course and have developed a deep interest in algorithms, web development, 
-            and machine learning.
+            I’m a passionate software developer specializing in creating efficient, scalable, and user-friendly applications. 
+            With experience in web development, data visualization, and machine learning, I strive to solve complex problems 
+            using modern technologies.
         </p>
         <a href="#projects" class="btn">Explore My Projects</a>
     </div>
-    
+
     <nav>
         <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">GitHub</a>
         <a href="mailto:your.email@example.com">Email Me</a>
@@ -182,7 +195,7 @@
     
     <section id="projects">
         <h2>Featured Projects</h2>
-        <p>Below are some of the key projects I have worked on, showcasing my skills in full-stack development, data analysis, and machine learning:</p>
+        <p>Below are some key projects showcasing my skills in full-stack development, data analysis, and machine learning:</p>
         <ul>
             <li><a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_1" target="_blank">Project 1: Dynamic Web App for Task Management</a></li>
             <li><a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_2" target="_blank">Project 2: Data Visualization Dashboard</a></li>
