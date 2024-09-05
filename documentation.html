@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website Documentation - Doruk Güçlü</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            background-color: #f4f7f9;
+            line-height: 1.8;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #1a1a1a;
+            padding: 40px 0;
+            color: white;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #cccccc;
+        }
+
+        /* Navigation Bar */
+        nav {
+            text-align: center;
+            margin: 30px 0;
+        }
+        nav a {
+            font-size: 1.1rem;
+            color: #555;
+            margin: 0 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* Main Content Area */
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        ul {
+            margin-left: 20px;
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Code Snippet Styling */
+        pre {
+            background-color: #f4f7f9;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #cccccc;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website Documentation</h1>
+        <p>By Doruk Güçlü</p>
+    </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#process">Process</a>
+        <a href="#issues">Challenges</a>
+        <a href="#code">Code</a>
+        <a href="#conclusion">Conclusion</a>
+    </nav>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>
+                This documentation covers the steps I took to build my portfolio website, from planning to coding. I'll walk you through the challenges I faced, the solutions I found, and the key decisions I made along the way.
+            </p>
+        </section>
+
+        <section id="process">
+            <h2>The Process</h2>
+            <p>
+                Building the website involved multiple stages, including designing the layout, creating navigation, and ensuring responsiveness. Here are the main steps:
+            </p>
+            <ul>
+                <li>Planning the website layout and structure.</li>
+                <li>Choosing fonts, colors, and overall style.</li>
+                <li>Writing the HTML and CSS for a clean, responsive design.</li>
+                <li>Incorporating interactive elements like hover effects and animations.</li>
+            </ul>
+        </section>
+
+        <section id="issues">
+            <h2>Challenges and Issues</h2>
+            <p>
+                Throughout the process, I encountered a few challenges:
+            </p>
+            <ul>
+                <li>Responsive Design: Ensuring the layout adapted properly to different screen sizes.</li>
+                <li>Styling Issues: Aligning elements perfectly using flexbox and grid layouts.</li>
+                <li>Browser Compatibility: Making sure the website looked the same across different browsers.</li>
+            </ul>
+            <p>
+                After some trial and error, I resolved these issues by refining my CSS and testing on multiple devices.
+            </p>
+        </section>
+
+        <section id="code">
+            <h2>Key Code Snippets</h2>
+            <p>Here are some key code snippets that helped in building the website:</p>
+            <pre>
+/* Example of a responsive grid layout */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+            </pre>
+            <pre>
+/* Hover effect for project cards */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+            </pre>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>
+                Overall, building this website was a rewarding experience. I learned a lot about web development best practices and overcame many design and technical challenges. I look forward to expanding the website with more features in the future.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Doruk Güçlü | Documentation for Portfolio Website</p>
+    </footer>
+</body>
+</html>
