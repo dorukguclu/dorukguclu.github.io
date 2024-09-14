@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merged Notes: College Board & Swift Learning</title>
+    <title>Merged Website: College Board & Swift Learning</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,6 +12,38 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
+        /* Black header and footer styles */
+        header, footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+        header h1, footer p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        /* Footer Links */
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        footer ul li {
+            margin: 0 15px;
+        }
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -19,11 +51,6 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 40px;
         }
         section {
             margin: 40px 0;
@@ -52,6 +79,7 @@
         a:hover {
             text-decoration: underline;
         }
+
         @media (max-width: 768px) {
             .container {
                 padding: 10px;
@@ -64,9 +92,13 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <!-- Header -->
+    <header>
         <h1>Merged Website: College Board & Swift Learning</h1>
+    </header>
 
+    <!-- Main content container -->
+    <div class="container">
         <section>
             <h2>Swift Learning</h2>
             <ul>
@@ -187,5 +219,13 @@
         </section>
 
     </div>
-</body>
-</html>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Merged Website</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer
