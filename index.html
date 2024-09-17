@@ -83,46 +83,24 @@
             color: #3498db;
         }
 
-        /* Project Section with Card Layout */
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+        /* Goals and Experiences Section */
+        .goals {
             max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .project-card {
-            background-color: white;
-            padding: 20px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
         }
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-        .project-card h3 {
-            font-size: 1.5rem;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .project-card p {
-            font-size: 1rem;
-            color: #666;
+        .goals h2 {
+            font-size: 2rem;
             margin-bottom: 20px;
+            color: #333;
         }
-        .project-card a {
-            font-size: 1rem;
-            color: #3498db;
-            font-weight: 600;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .project-card a:hover {
-            color: #1f78b4;
+        .goals p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
         }
 
         /* Footer */
@@ -155,8 +133,8 @@
             .intro h2 {
                 font-size: 1.8rem;
             }
-            .project-card h3 {
-                font-size: 1.4rem;
+            .goals h2 {
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -171,8 +149,7 @@
         <h2>About Me</h2>
         <hr>
         <p>
-            Welcome to my page I am a 10th-grade student at Hisar School, taking AP CSP. I am interested in computer science, robotics, sports, and games. Here is my portfolio, 
-            everything that I did, and everything that I will do.
+            Welcome to my page! I am a 10th-grade student at Hisar School, taking AP CSP. I am interested in computer science, robotics, sports, and games. Here is my portfolio, everything that I did, and everything that I will do.
         </p>
     </section>
 
@@ -181,25 +158,13 @@
         <a href="cs50.html" target="_blank">CS50 Course</a>
         <a href="notes.html" target="_blank">Merged Notes</a>
         <a href="doc.html" target="_blank">Documentation</a>
-        
     </nav>
 
-    <section class="projects" id="projects">
-        <div class="project-card">
-            <h3>Connect four</h3>
-            <p>A game built with the help of Scratch. The goal is to make 4 dots link, can you win the game?</p>
-            <a href="https://scratch.mit.edu/projects/1062961427" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-            <h3>Swift codes</h3>
-            <p>Some basic Swift codes that are fundamental for learning the language.</p>
-            <a href="https://github.com/dorukguclu/SwiftProjects" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-            <h3>PhotoFrame App</h3>
-            <p>A basic app that previews a photo, designed in the XCode studio.</p>
-            <a href="photoframe.storyboard" target="_blank">View on GitHub</a>
-        </div>
+    <!-- Goals and Experiences Section -->
+    <section class="goals">
+        <h2>My Goals and Experiences</h2>
+        <p><strong>Goals:</strong> My goal is to deepen my knowledge in web development, artificial intelligence, and robotics. I aim to continue learning and applying new technologies to create solutions that can have a positive impact.</p>
+        <p><strong>Experiences:</strong> I have worked on a variety of projects using programming languages like Python, Swift, and Scratch. My experiences in AP Computer Science Principles have sharpened my problem-solving skills, and I continue to seek opportunities to grow.</p>
     </section>
 
     <footer>
