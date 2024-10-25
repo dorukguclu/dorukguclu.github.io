@@ -37,14 +37,6 @@
             padding: 15px 0;
             text-align: center;
         }
-
-        nav li a {
-            padding: 0;
-            margin: 0 15px;
-            display: inline;
-            text-decoration: none;
-            color: #333;
-        }
         
         /* Home Button Styling */
         .home-button {
@@ -62,15 +54,24 @@
         }
 
         /* Other Navigation Links */
-        nav ul li a {
-            color: #333;
-            text-decoration: none;
-            font-size: 1.1rem;
-        }
+        /* Make <li> elements inline */
+             nav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
 
-        nav ul li a:hover {
-            color: #3498db;
-        }
+            nav li {
+                display: inline;
+                margin-right: 15px;
+            }
+
+            /* Style <a> links without background */
+            nav li a {
+                padding: 0;
+                text-decoration: none;
+                color: #333;
+            }
 
         /* Main Content */
         main {
