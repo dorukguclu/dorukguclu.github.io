@@ -3,113 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Doruk Güçlü Projects</title>
+    <title>Merged Notes: College Board & Swift Learning</title>
     <style>
-        /* Flex layout for full-height structure */
+        /* Make the body and html fill the viewport and enable flexbox for layout */
         html, body {
-            height: 100%;
+            height: 100%; /* Ensure the body and html fill the entire viewport */
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
+        }
+
+        body {
             font-family: Arial, sans-serif;
-            color: #333;
+            line-height: 1.6;
             background-color: #f4f4f4;
         }
 
-        /* Header styling */
+        /* Container for content that expands to fill the space */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            flex-grow: 1; /* Ensures the container grows to fill space */
+        }
+
+        /* Header styles */
         header {
             background-color: #000;
             color: #fff;
             text-align: center;
-            padding: 20px 0;
+            padding: 30px 0;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 36px;
         }
 
-        /* Navigation styling */
-        nav {
-            margin: 20px 0;
+        /* Section styles */
+        section {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            border: 1px solid #ddd;
         }
-        nav a {
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
             color: #3498db;
             text-decoration: none;
-            font-size: 1.2em;
-            margin: 0 10px;
-            padding: 8px 16px;
-            border: 2px solid #3498db;
-            border-radius: 5px;
-            transition: 0.3s;
+            font-weight: bold;
         }
-        nav a:hover {
-            background-color: #3498db;
-            color: #fff;
+        a:hover {
+            text-decoration: underline;
         }
 
-        /* Main content styling */
-        .content {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-            flex-grow: 1; /* Pushes footer to the bottom */
+        /* Image styling */
+        .img-responsive {
+            width: 90%; /* Set the image to 90% of the container */
+            height: auto; /* Maintain the aspect ratio */
+            display: block;
+            margin: 20px auto;
         }
-        .content p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-
-        /* Footer styling */
+        
+        /* Footer styles */
         footer {
             background-color: #000;
             color: #fff;
             text-align: center;
             padding: 15px 0;
-            width: 100%;
-            margin-top: auto; /* Ensures footer stays at the bottom */
+            margin-top: auto; /* Push the footer to the bottom of the page */
         }
         footer p {
             margin: 0;
-            font-size: 0.9em;
+            font-size: 18px;
         }
-        footer a {
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        footer ul li {
+            margin: 0 15px;
+        }
+        footer ul li a {
             color: #fff;
             text-decoration: none;
         }
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
 
-        /* Responsive adjustments */
+        /* For smaller screens */
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
+            .container {
+                padding: 10px;
             }
-            nav a {
-                font-size: 1em;
-                padding: 6px 12px;
+            section {
+                margin: 20px 0;
+                padding: 15px;
             }
         }
     </style>
 </head>
 <body>
-
-    <!-- Header section with title -->
+    </main>
+    <!-- Header -->
     <header>
-        <h1>Doruk Güçlü's Projects</h1>
+        <h1>Merged Notes: College Board & Swift Learning</h1>
     </header>
 
-    <!-- Navigation links to other pages -->
-    <nav>
-        <a href="merged_notes.html">College Board & Swift Learning Notes</a>
-        <a href="https://dorukguclu.github.io/about.html">About</a>
-    </nav>
-
-    <!-- Main content section with description -->
-    <div class="content">
-        <p>Welcome to Doruk Güçlü's Projects. Here, you can find my learning notes, projects, and documentation on programming, data structures, and algorithms. Navigate through the links above to explore specific topics.</p>
-        <p>Click on <a href="merged_notes.html">College Board & Swift Learning Notes</a> to dive into detailed study notes and examples.</p>
-    </div>
-    
     <!-- Main content container -->
     <div class="container">
         <section>
@@ -325,10 +344,12 @@
         </section>
     </div>
     </main>
-    <!-- Footer section -->
-    <footer>
-        <p>&copy; 2024 Doruk Güçlü | Building the Future, One Project at a Time | <a href="https://github.com/dorukguclu" target="_blank">GitHub</a></p>
-    </footer>
+  <!-- Footer (at the bottom of the page) -->
+  <footer>
+    <p>&copy; 2024 Doruk Güçlü | Building the Future, One Project at a Time</p>
+    <a href="mailto:doruk.guclu@hisarschool.k12.tr">doruk.guclu@hisarschool.k12.tr</a>
+    <a href="https://github.com/dorukguclu" target="_blank">GitHub</a>
+  </footer>
 
 </body>
 </html>
