@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merged Notes: College Board & Swift Learning</title>
+    <title>Home - Doruk Güçlü Projects</title>
     <style>
-        /* Make the body and html fill the viewport and enable flexbox for layout */
+        /* Flex layout for full-height structure */
         html, body {
-            height: 100%; /* Ensure the body and html fill the entire viewport */
+            height: 100%;
             margin: 0;
             padding: 0;
             display: flex;
@@ -16,7 +16,7 @@
             background-color: #f4f4f4;
         }
 
-        /* Container for content that expands to fill the space */
+        /* Boxed container for main content */
         .container {
             max-width: 900px;
             width: 100%;
@@ -25,16 +25,12 @@
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            flex-grow: 1; /* Ensures the container grows to fill space */
+            flex-grow: 1; /* Pushes footer to the bottom if content is short */
         }
-        
-        .container p {
-    font-size: 1.1em; /* Adjusted paragraph font size */
-}
 
-        /* Header styles */
+        /* Header styling with gradient */
         header {
-            background-color: #1a1a1a);
+            background: linear-gradient(to right, #3498db, #2ecc71);
             color: #fff;
             text-align: center;
             padding: 40px 0;
@@ -44,7 +40,7 @@
             margin: 0;
             font-size: 2.5em;
         }
-        
+
         /* Navigation styling */
         nav {
             margin: 20px 0;
@@ -65,23 +61,26 @@
             background-color: #3498db;
             color: #fff;
         }
-        
-        /* Image styling */
-        .img-responsive {
-            width: 90%; /* Set the image to 90% of the container */
-            height: auto; /* Maintain the aspect ratio */
-            display: block;
-            margin: 20px auto;
+
+        /* Main content styling */
+        .content {
+            padding: 20px;
+            text-align: left;
+            color: #333;
+            line-height: 1.6;
         }
-        
-        /* Footer */
+        .content p {
+            font-size: 1.1em;
+        }
+
+        /* Footer styling to span full width */
         footer {
             background-color: #1a1a1a;
             color: #cccccc;
             text-align: center;
             padding: 40px 0;
             width: 100%; /* Ensures footer spans full width */
-            margin-top: auto; /* Pushes footer to bottom of page */
+            margin-top: 50px;
         }
         footer p {
             font-size: 0.9rem;
@@ -112,17 +111,23 @@
 </head>
 <body>
 
-    <!-- Main content container -->
+    <!-- Boxed Container -->
     <div class="container">
-            <!-- Header -->
-    <header>
-        <h1>Merged Notes: College Board & Swift Learning</h1>
-    </header>
-         <!-- Navigation links to other pages -->
+        <!-- Header with gradient background -->
+        <header>
+            <h1>Doruk Güçlü's Projects</h1>
+        </header>
+
+        <!-- Navigation links to other pages -->
         <nav>
             <a href="merged_notes.html">College Board & Swift Learning Notes</a>
             <a href="https://dorukguclu.github.io/about.html">About</a>
         </nav>
+
+        <!-- Main content section with description -->
+        <div class="content">
+            <p>Welcome to Doruk Güçlü's Projects. Here, you can find my learning notes, projects, and documentation on programming, data structures, and algorithms. Navigate through the links above to explore specific topics.</p>
+            <p>Click on <a href="merged_notes.html">College Board & Swift Learning Notes</a> to dive into detailed study notes and examples.</p>
             <h2>Swift Learning</h2>
             <ul>
                 <li>Programming revolves around inputs and outputs, used daily in various contexts.</li>
@@ -240,6 +245,9 @@
             </ul>
             <p><a href="https://dorukguclu.github.io/deneme.mp4">View Screen Recording</a></p>
         </section>
+        </div>
+    </div>
+            
 
     <!-- Main content container -->
     <div class="container">
@@ -333,11 +341,13 @@
             <p><a href="https://dorukguclu.github.io/big.idea2.mp4">View Screen Recording</a></p>
         </section>
     </div>
-  <!-- Footer (at the bottom of the page) -->
-  <footer>
+    
+    <!-- Footer section spans full width, outside container box -->
+    <footer>
         <p>&copy; 2024 Doruk Güçlü | Building the Future, One Project at a Time</p>
         <a href="mailto:doruk.guclu@hisarschool.k12.tr">doruk.guclu@hisarschool.k12.tr</a>
         <a href="https://github.com/dorukguclu" target="_blank">GitHub</a>
-  </footer>
+    </footer>
+
 </body>
 </html>
