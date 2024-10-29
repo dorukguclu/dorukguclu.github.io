@@ -27,10 +27,14 @@
             border-radius: 8px;
             flex-grow: 1; /* Ensures the container grows to fill space */
         }
+        
+        .container p {
+    font-size: 1.1em; /* Adjusted paragraph font size */
+}
 
         /* Header styles */
         header {
-            background-color: #000);
+            background-color: #1a1a1a);
             color: #fff;
             text-align: center;
             padding: 40px 0;
@@ -40,35 +44,7 @@
             margin: 0;
             font-size: 2.5em;
         }
-
-        /* Section styles */
-        section {
-            margin: 40px 0;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #555;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            padding-left: 20px;
-        }
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+        
         /* Navigation styling */
         nav {
             margin: 20px 0;
@@ -89,18 +65,7 @@
             background-color: #3498db;
             color: #fff;
         }
-
-        /* Main content styling */
-        .content {
-            padding: 20px;
-            text-align: left;
-            color: #333;
-            line-height: 1.6;
-        }
-        .content p {
-            font-size: 1.1em;
-        }
-
+        
         /* Image styling */
         .img-responsive {
             width: 90%; /* Set the image to 90% of the container */
@@ -116,7 +81,7 @@
             text-align: center;
             padding: 40px 0;
             width: 100%; /* Ensures footer spans full width */
-            margin-top: 50px;
+            margin-top: auto; /* Pushes footer to bottom of page */
         }
         footer p {
             font-size: 0.9rem;
@@ -146,15 +111,18 @@
     </style>
 </head>
 <body>
-    </main>
-    <!-- Header -->
-    <header>
-        <h1>Merged Notes: College Board & Swift Learning</h1>
-    </header>
 
     <!-- Main content container -->
     <div class="container">
-        <section>
+            <!-- Header -->
+    <header>
+        <h1>Merged Notes: College Board & Swift Learning</h1>
+    </header>
+         <!-- Navigation links to other pages -->
+        <nav>
+            <a href="merged_notes.html">College Board & Swift Learning Notes</a>
+            <a href="https://dorukguclu.github.io/about.html">About</a>
+        </nav>
             <h2>Swift Learning</h2>
             <ul>
                 <li>Programming revolves around inputs and outputs, used daily in various contexts.</li>
@@ -276,9 +244,7 @@
     <!-- Main content container -->
     <div class="container">
         <!-- Content sections here... -->
-        
-        <!-- Image and link section inside the box -->
-        <section>
+          <section>
             <h2>Big Idea 2</h2>
             <ul>
                 <li>The binary system is made up of 2 digits: 0 and 1.
@@ -362,11 +328,11 @@
                 <li>After filtering and cleaning the data, programs allow users to interact with it for insights and knowledge.</li>
                 <li>Users can filter, sort, combine, transform, cluster, and classify data.</li>
             </ul>
+        <!-- Image and link section inside the box -->
             <img src="ss.png" class="img-responsive" alt="Description of the image">
             <p><a href="https://dorukguclu.github.io/big.idea2.mp4">View Screen Recording</a></p>
         </section>
     </div>
-    </main>
   <!-- Footer (at the bottom of the page) -->
   <footer>
         <p>&copy; 2024 Doruk Güçlü | Building the Future, One Project at a Time</p>
