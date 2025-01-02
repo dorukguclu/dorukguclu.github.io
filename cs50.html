@@ -37,8 +37,7 @@
             padding: 15px 0;
             text-align: center;
         }
-        
-        /* Home Button Styling */
+
         .home-button {
             color: #fff;
             background-color: #3498db;
@@ -53,25 +52,22 @@
             background-color: #2980b9;
         }
 
-        /* Other Navigation Links */
-        /* Make <li> elements inline */
-             nav ul {
-                list-style-type: none;
-                padding: 0;
-                margin: 0;
-            }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
 
-            nav li {
-                display: inline;
-                margin-right: 15px;
-            }
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
 
-            /* Style <a> links without background */
-            nav li a {
-                padding: 0;
-                text-decoration: none;
-                color: #333;
-            }
+        nav li a {
+            padding: 0;
+            text-decoration: none;
+            color: #333;
+        }
 
         /* Main Content */
         main {
@@ -80,7 +76,7 @@
             margin: 0 auto;
         }
 
-        /* Section Styles - Apply consistent box style */
+        /* Section Styles */
         section {
             margin-bottom: 40px;
             background-color: #fff;
@@ -96,31 +92,16 @@
             margin-bottom: 20px;
         }
 
-        .project-list, .resources-list, ul {
+        ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
 
-        .project-list li, .resources-list li, ul li {
-            background-color: #ecf0f1;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        ul li {
+            margin-bottom: 10px;
         }
 
-        .project-list a, .resources-list a {
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .project-list a:hover, .resources-list a:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
         footer {
             background-color: #1a1a1a;
             color: #cccccc;
@@ -128,16 +109,12 @@
             padding: 40px 0;
             margin-top: 50px;
         }
-        footer p {
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-        }
+
         footer a {
             color: #3498db;
             text-decoration: none;
-            font-weight: 600;
-            margin: 0 10px;
         }
+
         footer a:hover {
             color: #1f78b4;
         }
@@ -147,9 +124,7 @@
             header h1 {
                 font-size: 2rem;
             }
-            nav ul {
-                text-align: center;
-            }
+
             nav ul li {
                 display: block;
                 margin: 10px 0;
@@ -168,6 +143,7 @@
             <li><a href="https://dorukguclu.github.io" class="home-button">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#progress">Progress</a></li>
+            <li><a href="#notes">Notes</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#resources">Resources</a></li>
         </ul>
@@ -195,6 +171,30 @@
                 <li>Engaged with the CS50 community through forums</li>
             </ul>
         </section>
+
+        <!-- Notes Section -->
+        <section id="notes">
+            <h2>Notes</h2>
+            <ul>
+                <li>
+                    <h3>Lecture 1: Printing and Data Types</h3>
+                    <ul>
+                        <li>Use <code>printf</code> for formatted output, with placeholders like <code>%i</code>, <code>%f</code>, and <code>%li</code>.</li>
+                        <li>Specify precision for floats using <code>%.nf</code> (e.g., <code>%.5f</code>).</li>
+                        <li>Use proper data types like <code>int</code>, <code>float</code>, or <code>double</code>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Lecture 2: Loops and Control Structures</h3>
+                    <ul>
+                        <li><strong>While Loop</strong>: Repeats until a condition is false.</li>
+                        <li><strong>Do-While Loop</strong>: Ensures the loop runs at least once.</li>
+                        <li><strong>For Loop</strong>: Used for iteration with defined steps.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
 
         <!-- Projects Section -->
         <section id="projects">
