@@ -37,7 +37,8 @@
             padding: 15px 0;
             text-align: center;
         }
-
+        
+        /* Home Button Styling */
         .home-button {
             color: #fff;
             background-color: #3498db;
@@ -52,22 +53,25 @@
             background-color: #2980b9;
         }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
+        /* Other Navigation Links */
+        /* Make <li> elements inline */
+             nav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
 
-        nav li {
-            display: inline;
-            margin-right: 15px;
-        }
+            nav li {
+                display: inline;
+                margin-right: 15px;
+            }
 
-        nav li a {
-            padding: 0;
-            text-decoration: none;
-            color: #333;
-        }
+            /* Style <a> links without background */
+            nav li a {
+                padding: 0;
+                text-decoration: none;
+                color: #333;
+            }
 
         /* Main Content */
         main {
@@ -76,7 +80,7 @@
             margin: 0 auto;
         }
 
-        /* Section Styles */
+        /* Section Styles - Apply consistent box style */
         section {
             margin-bottom: 40px;
             background-color: #fff;
@@ -92,16 +96,31 @@
             margin-bottom: 20px;
         }
 
-        ul {
+        .project-list, .resources-list, ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
 
-        ul li {
-            margin-bottom: 10px;
+        .project-list li, .resources-list li, ul li {
+            background-color: #ecf0f1;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
 
+        .project-list a, .resources-list a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-list a:hover, .resources-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
         footer {
             background-color: #1a1a1a;
             color: #cccccc;
@@ -109,12 +128,16 @@
             padding: 40px 0;
             margin-top: 50px;
         }
-
+        footer p {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
         footer a {
             color: #3498db;
             text-decoration: none;
+            font-weight: 600;
+            margin: 0 10px;
         }
-
         footer a:hover {
             color: #1f78b4;
         }
@@ -124,7 +147,9 @@
             header h1 {
                 font-size: 2rem;
             }
-
+            nav ul {
+                text-align: center;
+            }
             nav ul li {
                 display: block;
                 margin: 10px 0;
