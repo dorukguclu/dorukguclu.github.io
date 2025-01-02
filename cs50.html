@@ -201,14 +201,81 @@
         <section id="notes">
             <h2>Notes</h2>
             <ul>
-                <li>
-                    <h3>Lecture 1: Printing and Data Types</h3>
-                    <ul>
-                        <li>Use <code>printf</code> for formatted output, with placeholders like <code>%i</code>, <code>%f</code>, and <code>%li</code>.</li>
-                        <li>Specify precision for floats using <code>%.nf</code> (e.g., <code>%.5f</code>).</li>
-                        <li>Use proper data types like <code>int</code>, <code>float</code>, or <code>double</code>.</li>
-                    </ul>
-                </li>
+                 <h2>1. Printing and Data Types</h2>
+        <ul>
+            <li>Use <code>printf</code> for formatted output, with placeholders like <code>%i</code> (integer), <code>%f</code> (float), and <code>%li</code> (long integer).</li>
+            <li>Specify precision for floats using <code>%.nf</code> (e.g., <code>%.5f</code> for five decimal places).</li>
+            <li>Use proper data types (e.g., <code>int</code>, <code>float</code>, <code>double</code>) to match the desired operation. Use <code>float</code> or <code>double</code> for precise calculations.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>2. Loops and Control Structures</h2>
+        <ul>
+            <li><strong>While Loop</strong>: Repeats until a condition is false; ideal for validating user input.</li>
+            <li><strong>Do-While Loop</strong>: Ensures the loop runs at least once before checking the condition.</li>
+            <li><strong>For Loop</strong>: Used for iteration with defined start, condition, and increment steps.</li>
+            <li>Loops can be nested for multi-dimensional tasks, such as printing grids dynamically based on user input.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. Functions and Modular Design</h2>
+        <ul>
+            <li>Functions can return values (e.g., <code>int</code>, <code>float</code>) and take arguments for dynamic behavior.</li>
+            <li>Use function prototypes to declare functions before they are defined.</li>
+            <li>Type casting allows converting variables (e.g., <code>int</code> to <code>float</code>) to handle truncation in operations like division.</li>
+            <li>Abstract repetitive tasks into functions for better readability and reusability.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>4. Constants and Variable Scope</h2>
+        <ul>
+            <li>Use <code>const</code> to declare variables that shouldn’t be modified.</li>
+            <li>Understand variable scope: A variable is only accessible within the block (curly braces) where it’s declared.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5. Arithmetic and Memory Limitations</h2>
+        <ul>
+            <li>Operators like <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, and <code>%</code> perform basic calculations, with <code>%</code> used for remainders.</li>
+            <li><strong>Integer Overflow</strong>: Finite memory causes numbers to wrap around (e.g., 32-bit integers max out at ~4 billion). Examples:</li>
+            <ul>
+                <li><strong>Y2K Problem</strong>: Two-digit years confused software after 1999.</li>
+                <li><strong>2038 Problem</strong>: 32-bit time counters will overflow, causing potential failures.</li>
+            </ul>
+            <li><strong>Floating Point Imprecision</strong>: Limited memory means computers cannot perfectly represent all real numbers, leading to rounding errors.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>6. Efficient Design and Readability</h2>
+        <ul>
+            <li>Avoid redundancy using loops and dynamic variables.</li>
+            <li>Add comments (<code>//</code>) to explain code for better collaboration.</li>
+            <li>Modularize code into reusable functions to simplify logic and avoid duplication.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7. Real-World Programming Challenges</h2>
+        <ul>
+            <li><strong>Integer Overflow</strong> caused glitches in:</li>
+            <ul>
+                <li>Games like Pac-Man and Donkey Kong.</li>
+                <li>Aircraft software (e.g., Boeing 787 required periodic restarts).</li>
+            </ul>
+        </ul>
+    </section>
+
+    <section>
+        <h2>8. Command-Line Interface (CLI)</h2>
+        <ul>
+            <li>Learn CLI commands like <code>mv</code> (rename), <code>rm</code> (remove), <code>ls</code> (list files), and <code>mkdir</code> (make directory) for efficient file management.</li>
+            <li>Autocomplete (<code>Tab</code>) and command history (arrow keys) streamline workflows.</li>
+        </ul>
                 <li>
                     <h3>Lecture 2: Loops and Control Structures</h3>
                     <ul>
