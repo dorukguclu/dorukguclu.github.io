@@ -37,7 +37,7 @@
             padding: 15px 0;
             text-align: center;
         }
-        
+
         /* Home Button Styling */
         .home-button {
             color: #fff;
@@ -54,24 +54,22 @@
         }
 
         /* Other Navigation Links */
-        /* Make <li> elements inline */
-             nav ul {
-                list-style-type: none;
-                padding: 0;
-                margin: 0;
-            }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
 
-            nav li {
-                display: inline;
-                margin-right: 15px;
-            }
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
 
-            /* Style <a> links without background */
-            nav li a {
-                padding: 0;
-                text-decoration: none;
-                color: #333;
-            }
+        nav li a {
+            padding: 0;
+            text-decoration: none;
+            color: #333;
+        }
 
         /* Main Content */
         main {
@@ -96,28 +94,22 @@
             margin-bottom: 20px;
         }
 
-        .project-list, .resources-list, ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .project-list li, .resources-list li, ul li {
-            background-color: #ecf0f1;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        }
-
-        .project-list a, .resources-list a {
+        .documentation textarea {
+            width: 100%;
+            height: 300px;
+            padding: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
             color: #333;
-            text-decoration: none;
-            font-weight: bold;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .project-list a:hover, .resources-list a:hover {
-            text-decoration: underline;
+        .documentation textarea:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 2px 6px rgba(52, 152, 219, 0.3);
         }
 
         /* Footer */
@@ -128,16 +120,19 @@
             padding: 40px 0;
             margin-top: 50px;
         }
+
         footer p {
             font-size: 0.9rem;
             margin-bottom: 10px;
         }
+
         footer a {
             color: #3498db;
             text-decoration: none;
             font-weight: 600;
             margin: 0 10px;
         }
+
         footer a:hover {
             color: #1f78b4;
         }
@@ -170,6 +165,7 @@
             <li><a href="#progress">Progress</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#resources">Resources</a></li>
+            <li><a href="#documentation">Documentation</a></li>
         </ul>
     </nav>
 
@@ -194,6 +190,15 @@
                 <li>Developed several projects and problem sets</li>
                 <li>Engaged with the CS50 community through forums</li>
             </ul>
+        </section>
+
+        <!-- Documentation Section -->
+        <section id="documentation">
+            <h2>CS50 Documentation</h2>
+            <p>Write your notes and documentation for CS50 videos below:</p>
+            <div class="documentation">
+                <textarea placeholder="Write your notes here..."></textarea>
+            </div>
         </section>
 
         <!-- Projects Section -->
